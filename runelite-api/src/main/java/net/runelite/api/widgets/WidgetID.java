@@ -209,6 +209,7 @@ public class WidgetID
 		static final int FIXED_VIEWPORT = 17;
 		static final int RESIZABLE_VIEWPORT_OLD_SCHOOL_BOX = 12;
 		static final int RESIZABLE_VIEWPORT_BOTTOM_LINE = 12;
+		static final int FPS_WIDGET = 23;
 	}
 
 	static class FixedViewport

@@ -65,10 +65,16 @@ public class BankValuePlugin extends Plugin
 	{
 		Widget widgetBankTitleBar = client.getWidget(WidgetInfo.BANK_TITLE_BAR);
 
+		Widget widgetFps = client.getWidget(WidgetInfo.FPS_WIDGET);
+
 		if (widgetBankTitleBar == null || widgetBankTitleBar.isHidden())
 		{
+			widgetFps.setHidden(false);
+
 			return;
 		}
+
+		widgetFps.setHidden(true);
 
 		bankTitle.save();
 		calculate(widgetBankTitleBar);
